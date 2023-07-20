@@ -62,7 +62,8 @@ vtp/vtk files of 42 anatomically meaningful tracts are in `./parcellation_result
 
 You can visualize them using 3D Slicer.
 
-**TOADD Photos for 4 example subjects.**
+![TestExamples](https://github.com/SlicerDMRI/TractCloud/assets/56477109/5173e233-c66d-4954-b483-6fbf37b87310)
+
 
 ## References
 
