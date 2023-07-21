@@ -37,8 +37,8 @@ The environment test was performed on RTX4090 and A5000
 ## Training on anatomically curated atlas (ORG atlas)
 
 The ORG atlas used in training is available at http://dmri.slicer.org/atlases/. You can directly download our processed data at https://github.com/SlicerDMRI/TractCloud/releases (1 million streamlines, 800 clusters & 800 outliers).
-1. Download `TrainData_800clu800ol.zip` to `./` and `tar -xzvf TrainData_800clu800ol.zip`
-2. Run `sh TrainOnAtlas.sh`
+1. Download `TrainData_800clu800ol.tar.gz` to `./` and `tar -xzvf TrainData_800clu800ol.tar.gz`
+2. Run `cd ./train_test && sh TrainOnAtlas.sh`
 
 ## Training on your custom dataset
 Your input streamline features should have size of (number_streamlines, number_points_per_streamline, 3), and size of labels is (number_streamlines, ). You may save/load features and labels using .pickle files.
@@ -50,9 +50,9 @@ For training using the setting reported in our paper (k=20, k_global=500), most 
 
 ## Testing on real data (registration-free parcellation)
 Use the our trained model to parcellate real tractography data without registration.
-1. Download `TrainedModel.zip` (https://github.com/SlicerDMRI/TractCloud/releases) to `./`, and `tar -xzvf TrainedModel.zip`
-2. Download `TestData.zip` (https://github.com/SlicerDMRI/TractCloud/releases) to `./`, and `tar -xzvf TestData.zip`
-3. Run `sh TractCloud.sh`
+1. Download `TrainedModel.tar.gz` (https://github.com/SlicerDMRI/TractCloud/releases) to `./`, and `tar -xzvf TrainedModel.tar.gz`
+2. Download `TestData.tar.gz` (https://github.com/SlicerDMRI/TractCloud/releases) to `./`, and `tar -xzvf TestData.tar.gz`
+3. Run `cd ./train_test && sh TractCloud.sh`
 
 ## Visualizing test parcellation results
 
